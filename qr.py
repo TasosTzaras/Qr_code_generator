@@ -2,7 +2,9 @@
 
 import qrcode
 
-# s = https://github.com/TasosTzaras
+# example of s: s = https://github.com/TasosTzaras
+# s can be any URL we would like to make a QR code of
+
 s = input("give the url to QRCode: \n")
 img = qrcode.make(s)
 img.save("qr.png")
