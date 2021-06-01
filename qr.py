@@ -2,10 +2,13 @@
 
 import qrcode
 
-# example of s: s = https://github.com/TasosTzaras
-# s can be any URL we would like to make a QR code of
-
-s = input("give the url to QRCode: \n")
-img = qrcode.make(s)
-img.save("qr.png")
-print("QRCode generated successfully!!")
+# s = https://www.linkedin.com/in/tasos-tzaras-04910b213/
+    
+def qr_generator(link):
+    img = qrcode.make(link)
+    img.save("qr.png")
+    print("QRCode generated successfully!!")
+    
+if __name__=='__main__':
+    s = input("give the url to QRCode: \n")
+    qr_generator(s))
